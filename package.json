@@ -1,0 +1,29 @@
+{
+  "name": "mern-proshop",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client":"npm start --prefix front-end",
+    "dev":"concurrently\"npm run server\"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadUsman1998/MERN-ecommerce.git"
+  },
+  "author": "Usman Ajmal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MuhammadUsman1998/MERN-ecommerce/issues"
+  },
+  "homepage": "https://github.com/MuhammadUsman1998/MERN-ecommerce#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20"
+  }
+}

@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "MERN shopping cart app",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
-    "client":"npm start --prefix front-end",
-    "dev":"concurrently\"npm run server\"npm run client\""
+    "client": "npm start --prefix front-end",
+    "dev": "concurrently\"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,12 @@
   },
   "homepage": "https://github.com/MuhammadUsman1998/MERN-ecommerce#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.6.5"
   },
   "devDependencies": {
     "concurrently": "^7.4.0",

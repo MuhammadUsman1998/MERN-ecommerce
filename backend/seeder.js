@@ -35,10 +35,10 @@ const adminUsers = createdUsers[0]._id
     process.exit(1)
 }
 }
+// await connectDB()
 
 const destroyData = async () =>{
     try {
-        // await connectDB()
 
         await User.deleteMany()
         await Product.deleteMany()

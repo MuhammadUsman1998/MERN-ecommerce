@@ -24,7 +24,6 @@ if (!token) {
     res.status(401)
     res.send("No Authorized , No Token")
 }
-
 })
 
 export {protect}
